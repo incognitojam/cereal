@@ -1246,6 +1246,10 @@ struct Joystick {
   buttons @1: List(Bool);
 }
 
+struct AthenaRequest {
+  method @0 :Text;
+}
+
 struct DriverState {
   frameId @0 :UInt32;
   modelExecutionTime @14 :Float32;
@@ -1491,6 +1495,7 @@ struct Event {
 
     # *********** debug ***********
     testJoystick @52 :Joystick;
+    athenaRequest @86 :AthenaRequest;
 
     # *********** legacy + deprecated ***********
     model @9 :Legacy.ModelData; # TODO: rename modelV2 and mark this as deprecated

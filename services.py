@@ -69,6 +69,7 @@ services = {
 
   # debug
   "testJoystick": (False, 0.),
+  "athenaRequest": (False, 0.),
 }
 service_list = {name: Service(new_port(idx), *vals) for  # type: ignore
                 idx, (name, vals) in enumerate(services.items())}
