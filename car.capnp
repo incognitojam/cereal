@@ -582,6 +582,7 @@ struct CarParams {
   enum SteerControlType {
     torque @0;
     angle @1;
+    pathAngle @2;
   }
 
   enum TransmissionType {
