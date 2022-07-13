@@ -682,6 +682,7 @@ struct ControlsState @0x97ff69c53601abf1 {
     steeringAngleDeg @1 :Float32;
     output @2 :Float32;
     saturated @3 :Bool;
+    pathAngleDeg @4 :Float32;
   }
 
   struct LateralPathAngleState {
