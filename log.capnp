@@ -592,6 +592,7 @@ struct ControlsState @0x97ff69c53601abf1 {
     angleState @58 :LateralAngleState;
     debugState @59 :LateralDebugState;
     torqueState @60 :LateralTorqueState;
+    pathAngleState @63 :LateralPathAngleState;
   }
 
   enum OpenpilotState @0xdbe58b96d2d1ac61 {
@@ -680,6 +681,13 @@ struct ControlsState @0x97ff69c53601abf1 {
     active @0 :Bool;
     steeringAngleDeg @1 :Float32;
     output @2 :Float32;
+    saturated @3 :Bool;
+  }
+
+  struct LateralPathAngleState {
+    active @0 :Bool;
+    pathAngleDeg @1 :Float32;
+    pathAngleDesiredDeg @2 :Float32;
     saturated @3 :Bool;
   }
 
