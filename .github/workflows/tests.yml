@@ -40,6 +40,7 @@ jobs:
       run: |
         $RUN "export ${{ matrix.backend }}=1 && \
               scons ${{ matrix.flags }} -j$(nproc) && \
+              ls gen/py && \
               messaging/test_runner && \
               visionipc/test_runner"
     - name: python tests
