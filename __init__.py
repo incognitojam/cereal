@@ -1,4 +1,3 @@
-# pylint: skip-file
 import os
 import capnp
 from typing import TYPE_CHECKING
